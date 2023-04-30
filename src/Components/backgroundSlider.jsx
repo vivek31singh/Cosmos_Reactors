@@ -1,5 +1,4 @@
 import video from "../assets/video__1.mp4";
-import TrendingFlatIcon from '@mui/icons-material/TrendingFlat';
 import { Link } from "react-router-dom";
 
 function BackgroundSlider() {
@@ -12,13 +11,18 @@ function BackgroundSlider() {
         </video>
       </div>
       <Link to='/home' className="z-10 absolute bottom-0 max-sm:bottom-2 left-0">
-  <div className="z-10 text-white grid grid-flow-row  mt-auto ml-5 w-screen absolute  max-sm:ml-2 bottom-32">
-    <p className="text-3xl pb-4 text-gray-600 max-sm:text-xl pb-2">EXPLORE</p>
-    <h1 className="text-4xl font-bold text-gray-500 max-sm:text-lg">SOLAR SYSTEM<TrendingFlatIcon  className="ml-2 text-gray-700"/></h1>
-  </div>
-</Link>
-
+        <div className="z-10 text-white grid grid-flow-row mt-auto ml-5 w-screen absolute max-sm:ml-2 bottom-32">
+          <p className="text-3xl pb-4 text-gray-600 max-sm:text-xl pb-2">EXPLORE</p>
+          <h1 className="text-4xl font-bold text-gray-500 max-sm:text-lg">
+            SOLAR SYSTEM
+            <span className="ml-2 text-gray-700">
+              &#x2192; {/* Right arrow */}
+            </span>
+          </h1>
+        </div>
+      </Link>
     </div>
   );
 }
+
 export default BackgroundSlider;
