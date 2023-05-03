@@ -20,7 +20,7 @@ function Planets() {
       className="relative h-screen w-full overflow-hidden bg-blur"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <div className="absolute bottom-0 left-0 w-full h-full flex flex-col justify-center items-center text-white z-10 p-4 sm:p-8">
+      <div className="absolute bottom-0 left-0 w-full h-full flex flex-col justify-center items-center z-10 text-white p-4 sm:p-8">
         <h1 className="text-3xl sm:text-5xl font-bold mb-8 text-center">
           Latest News
         </h1>
@@ -34,11 +34,13 @@ function Planets() {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </p>
+          <picture>
           <img
             src="https://images.unsplash.com/photo-1620901023292-30559f69d685"
             alt="news"
             className="w-full h-auto rounded-lg"
           />
+          </picture>
         </div>
       </div>
     </div>
